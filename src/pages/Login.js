@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-// import Logo from "../assets/logo/turnerlogo-desktop.png";
+import Logo from "../assets/turnerlogo-desktop.png";
 import ImageSections from "../components/imageSection";
 import { Link } from "react-router-dom";
 import Buttons from "../components/buttons/buttons";
+import "../index.css"
 
 import {
     GreenFillBtn1,
@@ -37,15 +38,15 @@ export default function Login () {
         <div className="bg-gray-100">
             <div className="header-styling header-spacing drop-shadow-xl">
                 <Link to="/">
-                {/* <ImageSections imageUrl={Logo} /> */}
+                <ImageSections imageUrl={Logo} />
                 </Link>
             </div>
             <div className="relative">
-                <h2 className="text-black mont-font text-left font-semibold text-4xl pl-24 mt-24">Welcome Back</h2>
-                <div className="drop-shadow-xl mb-14 bg-white grid ml-40 max-w-4xl mt-12 flex py-8 px-12">
-                <p className="font-medium text-slate-800 text-3xl border-rose-800 border-b-4 pb-6">Retrieve your quote</p>
+                <h2 className="text-black mont-font flex ml-20 font-semibold text-4xl mt-24">Welcome</h2>
+                <div className="drop-shadow-xl mb-14 bg-white grid ml-40 max-w-4xl mt-12 flex py-10 px-12">
+                <p className="font-medium text-slate-800 text-3xl border-rose-800 border-b-4 pb-6">Sign up here</p>
                 <div className="flex grid-reverse w-full justify-between">
-                    <p className="mt-12 text-xl">Quote number</p>
+                    <p className="mt-12 text-xl">Email</p>
                     <form className="mt-8">
                     <input type="text" className="border-2 p-3 border-blue-500" onChange={handleChange} name="NLP" placeholder={text} size="50" />
                     </form>
@@ -63,13 +64,13 @@ export default function Login () {
                     <Buttons
                     className="border rounded-full"
                     variant={GreenFillBtn1}
-                    text="YOUR QUOTE"
+                    text="REGISTER"
                     onClick={handleSubmit}
                     />
                     </form>
                 </div>
                 <div className="text-lg object-cover flex justify-center pt-4">
-                    <p>Please refer to our privacy policy for more information on how we comply with law.</p>
+                    <p>Please refer to our contact page for any extra assistance with your account</p>
                 </div>
                 </div>
             <footer class="pt-24 w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
