@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo/turnerlogo-desktop.png";
-import ImageSections from "../components/imageSec";
+// import Logo from "../assets/logo/turnerlogo-desktop.png";
+import ImageSections from "../components/imageSection";
 import { Link } from "react-router-dom";
-import Buttons from "../components/Buttons/Buttons";
+import Buttons from "../components/buttons/buttons";
 
 import {
     GreenFillBtn1,
-  } from "../components/Buttons/variants/variants";
+  } from "../components/buttons/variants";
 
 
 export default function Login () {
@@ -37,7 +37,7 @@ export default function Login () {
         <div className="bg-gray-100">
             <div className="header-styling header-spacing drop-shadow-xl">
                 <Link to="/">
-                <ImageSections imageUrl={Logo} />
+                {/* <ImageSections imageUrl={Logo} /> */}
                 </Link>
             </div>
             <div className="relative">
