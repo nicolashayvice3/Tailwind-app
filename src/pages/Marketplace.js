@@ -4,11 +4,13 @@ import Musashi from "../assets/musashi.jpeg"
 import Vegan from "../assets/veganprotein.jpg"
 import Gummies from "../assets/gummies.png"
 
+import ShoppingCart from "../components/sections/ShoppingCart"
+
 const products = [
     {
     id: 1,
     name: 'Bottle Of The Gods',
-    href: '/',
+    href: '',
     price: '$10,000',
     imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
     imageAlt: 'zeus himself would revive if he drank from this bottle',
@@ -16,7 +18,7 @@ const products = [
     {
     id: 2,
     name: 'Super Spice Mix',
-    href: '/',
+    href: '',
     price: '$400',
     imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
     imageAlt: 'Gingseng, olive oil, cardano and even a bit of pepper',
@@ -24,7 +26,7 @@ const products = [
     {
     id: 3,
     name: 'Prescription',
-    href: '/',
+    href: '',
     price: '$N/A',
     imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
@@ -32,7 +34,7 @@ const products = [
     {
     id: 4,
     name: 'Vibrating Pen',
-    href: '/',
+    href: '',
     price: '$35',
     imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
     imageAlt: 'Pen that vibrates, good for long hours of writting',
@@ -40,7 +42,7 @@ const products = [
     {
     id: 5,
     name: 'Vitamin Gummies',
-    href: '/',
+    href: '',
     price: '$900',
     imageSrc: {Gummies},
     imageAlt: 'Vitamin gummies for children',
@@ -48,7 +50,7 @@ const products = [
     {
     id: 6,
     name: 'Musashi Protein Powder',
-    href: '/',
+    href: '',
     price: '$3',
     imageSrc: {Musashi},
     imageAlt: 'Protein powder',
@@ -56,7 +58,7 @@ const products = [
     {
     id: 7,
     name: 'Greens Powder',
-    href: '/',
+    href: '',
     price: '$33',
     imageSrc: {Greens},
     imageAlt: 'Greens powder',
@@ -64,19 +66,27 @@ const products = [
     {
     id: 8,
     name: 'Vegan Protein Powder',
-    href: '/',
+    href: '',
     price: '$3,343',
     imageSrc: {Vegan},
     imageAlt: 'Vegan protein powder',
     },
 ]
+
+const handleSubmit = () => {
+    ShoppingCart()
+}
+
   
 export default function Example() {
 
     return (
     <div className="bg-white">
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+
         <h2 className="sr-only">Products</h2>
+
+        <ShoppingCart />
 
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
@@ -85,6 +95,7 @@ export default function Example() {
                 <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
+                    onClick={handleSubmit}
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
                 </div>

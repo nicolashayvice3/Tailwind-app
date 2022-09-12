@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/pharmacy-logo.png";
-import ImageSections from "../components/imageSection";
+import ImageSections from "../components/ImageSection";
 import { Link } from "react-router-dom";
 import Buttons from "../components/buttons/buttons";
 import "../index.css"
