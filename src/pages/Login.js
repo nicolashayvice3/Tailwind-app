@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/turnerlogo-desktop.png";
+import Logo from "../assets/pharmacy-logo.png";
 import ImageSections from "../components/imageSection";
 import { Link } from "react-router-dom";
 import Buttons from "../components/buttons/buttons";
@@ -44,19 +44,19 @@ export default function Login () {
             <div className="relative">
                 <h2 className="text-black mont-font flex ml-20 font-semibold text-4xl mt-24">Welcome</h2>
                 <div className="drop-shadow-xl mb-14 bg-white grid ml-40 max-w-4xl mt-12 flex py-10 px-12">
-                <p className="font-medium text-slate-800 text-3xl border-rose-800 border-b-4 pb-6">Sign up here</p>
+                <p className="font-medium text-slate-800 text-3xl border-green-800 border-b-4 pb-6">Sign up here</p>
                 <div className="flex grid-reverse w-full justify-between">
                     <p className="mt-12 text-xl">Email</p>
                     <form className="mt-8">
-                    <input type="text" className="border-2 p-3 border-blue-500" onChange={handleChange} name="NLP" placeholder={text} size="50" />
+                    <input type="text" className="border-2 p-3 border-green-500" onChange={handleChange} name="NLP" placeholder={text} size="50" />
                     </form>
                 </div>
                 <div className="flex grid-reverse w-full justify-between">
                     <p className="mt-8 text-xl shrink-0">Date of birth</p>
                     <form className="mt-6">
-                    <input type="text" className="border-2 shrink  p-3 rounded-xl border-blue-500" onChange={handleChange} name="day" placeholder={text1} size="5" />
-                    <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-blue-500" onChange={handleChange} name="month" placeholder={text2} size="25" />
-                    <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-blue-500" onChange={handleChange} name="year" placeholder={text3} size="5" />
+                    <input type="text" className="border-2 shrink  p-3 rounded-xl border-green-500" onChange={handleChange} name="day" placeholder={text1} size="5" />
+                    <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-green-500" onChange={handleChange} name="month" placeholder={text2} size="25" />
+                    <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-green-500" onChange={handleChange} name="year" placeholder={text3} size="5" />
                     </form>
                 </div>
                 <div className="flex container border-b-2 justify-end py-10 border-black border-dashed font-medium">
@@ -73,7 +73,7 @@ export default function Login () {
                     <p>Please refer to our contact page for any extra assistance with your account</p>
                 </div>
                 </div>
-            <footer class="pt-24 w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
+            <footer class="pt-24 w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-green-600">
                 <span class="text-sm text-white sm:text-center">© Copyright 2022 Company Name.
                 </span>
                 <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
