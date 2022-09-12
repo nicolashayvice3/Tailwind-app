@@ -6,6 +6,10 @@ import Gummies from "../assets/gummies.png"
 
 import ShoppingCart from "../components/sections/ShoppingCart"
 
+import Logo from "../assets/pharmacy-logo.png";
+import ImageSections from "../components/ImageSection";
+import { Link } from "react-router-dom";
+
 const products = [
     {
     id: 1,
@@ -82,9 +86,14 @@ export default function Example() {
 
     return (
     <div className="bg-white">
+        <div className="header-styling header-spacing drop-shadow-xl">
+            <Link to="/">
+            <ImageSections imageUrl={Logo} />
+            </Link>
+        </div>
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
 
-        <h2 className="sr-only">Products</h2>
+        <h2 className="text-black mont-font flex font-semibold text-4xl my-6">Products</h2>
 
         <ShoppingCart />
 

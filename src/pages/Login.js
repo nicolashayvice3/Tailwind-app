@@ -64,7 +64,7 @@ export default function Login () {
                     <Buttons
                     className="border rounded-full"
                     variant={GreenFillBtn1}
-                    text="REGISTER"
+                    text="LOG IN"
                     onClick={handleSubmit}
                     />
                     </form>

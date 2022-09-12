@@ -1,13 +1,16 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
 import Logo from '../assets/pharmacylady.jpeg'
 import MainLogo from '../assets/logopharmacy.png'
+
+import Contact from '../components/sections/ContactUs'
 
 const navigation = [
   { name: 'Featured', href: '#' },
   { name: 'Marketplace', href: 'shopping' },
-  { name: 'Contact', href: 'contact' },
+  { name: 'Locations', href: '/' },
   { name: 'About', href: 'about' },
 ]
 
@@ -152,6 +155,7 @@ export default function Example() {
             />
         </div>
         </div>
+        <Contact />
     </>
   )
 }
