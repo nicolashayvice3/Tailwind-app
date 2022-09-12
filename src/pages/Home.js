@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../assets/pharmacylady.jpeg'
+import MainLogo from '../assets/logopharmacy.png'
 
 const navigation = [
   { name: 'Featured', href: '#' },
@@ -31,12 +32,12 @@ export default function Example() {
                 <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                     <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                     <div className="flex w-full items-center justify-between md:w-auto">
-                        <a href="#">
+                        <a href="/">
                         <span className="sr-only">Your Company</span>
                         <img
                             alt="Your Company"
                             className="h-8 w-auto sm:h-10"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
+                            src={MainLogo}
                         />
                         </a>
                         <div className="-mr-2 flex items-center md:hidden">
