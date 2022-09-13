@@ -1,6 +1,6 @@
 # Tailwind-app
 
-An app made with React and tailwind.
+An app made with React and tailwind
 
 To view the app - git clone {app url}
 
