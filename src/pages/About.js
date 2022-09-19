@@ -1,7 +1,7 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
 import Header from '../components/sections/Header'
 
-export default function Example() {
+export default function About() {
   return (
     <>
     <Header />
