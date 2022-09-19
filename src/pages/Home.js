@@ -14,7 +14,7 @@ const navigation = [
   { name: 'About', href: 'about' },
 ]
 
-export default function Example() {
+export default function Home() {
   return (
     <>
         <div className="relative overflow-hidden w-full flex bg-white">
