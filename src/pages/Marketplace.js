@@ -79,7 +79,7 @@ const handleSubmit = () => {
 }
 
   
-export default function Example() {
+export default function Marketplace() {
 
     return (
     <div className="bg-white">
