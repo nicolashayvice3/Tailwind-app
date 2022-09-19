@@ -11,7 +11,7 @@ const navigation = [
     { name: 'About', href: 'about' },
   ]
 
-export default function About() {
+export default function Header() {
     return(
     <>
     <Popover>
